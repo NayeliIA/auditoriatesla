@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="js/socket.io.js" type="text/javascript"></script>
+    <!-- Librerias de tensorflow para los JSON NOTA: Eliminar los Ml-->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@3.12.0/dist/tf.min.js"></script>
+    <script src="https://unpkg.com/@microsoft/customvision-tfjs@1.3.0"></script>
+       <!-- <script defer src="subascript.js"></script>-->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+
+        <meta http-equiv="content-type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+    
+                <!--Creación de los 2 canvas de las camaras-->
+            
+            <div class="contenedor">
+                <div  class="tarjeta">
+                    <div id='tarjeta2' class="tarjeta2">
+                        <canvas class="capturedCanvas" id="capturedCanvas" width=1185 height=565>
+                            
+                        </canvas></div>
+                   
+                </div>
+            </div>
+                 
+                
+            
+            
+                <!-- Seccion de camara1 hidden-->
+                <div id="imageOverlay" class="imageOverlay">
+                    <video hidden autoplay="true" id="video"></video>
+                </div>
+                <canvas hidden id="CanvasFHD" width="1920px" height="1080px"></canvas>
+            
+            
+                
+                <!--<div id="linea_div"><canvas id="linea"></canvas></div> -->
+            
+            
+                <div><img id="ialab" src="/img/ialab.png" width="190" height="70">
+                    <div><img id="sanmina" src="/img/sanmina1.png" width="195" height="100">
+                        <div><img id="tesla" src="/img/teslalogo.png" width="195" height="100">
+                    </div>
+            
+                    <!-- Seccion de camaras  -->
+                    <video hidden autoplay="true" id="video"></video>
+            
+                    <!-- etiqueta de video lleva un Hidden para esconder -->
+                    <canvas id="canvasCamara" width="935" ; height="518"></canvas><!-- canvas donde se metera la imagen-->
+        
+              <!-- Canvas para graficas -->
+        
+    
+        <script src="js/subascript.js"></script>
+
+        <script src="js/target_classes.js"></script>
+
+
+</body>
+
+</html>
+   
+    <body>  
+
+   
+
+

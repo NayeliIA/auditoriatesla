@@ -1,0 +1,123 @@
+body{
+    background: linear-gradient(180deg, rgba(0,0,0,1) -30%, rgb(100, 167, 243) 75%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+#icono {
+    position: absolute;
+    width: calc(98%);
+    left: calc(1%);
+    top: calc(3%);
+    z-index: 0;
+}
+
+#harman {
+    position: absolute;
+    width: calc(11%);
+    top: calc(13%);
+    left: calc(43%);
+}
+
+#ialab {
+    position: absolute;
+    width: calc(7%);
+    height: calc(5%);
+    bottom: calc(10%);
+    left: calc(15%);
+
+    border-radius: 10px;
+
+}
+#tesla {
+    position: absolute;
+    width: calc(6%);
+    height: calc(9%);
+    bottom: calc(10%);
+    left: calc(45%);
+
+    border-radius: 10px;
+
+}
+
+#sanmina {
+    position: absolute;
+    width: calc(6%);
+    height: calc(9%);
+    bottom: calc(9%);
+    right: calc(10%);
+}
+#canvasCamara{
+    top: calc(60%);
+    left: calc(43%);
+}
+.contenedor{
+    height: 80vh;
+    width: 98vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.tarjeta{
+    width: 1200px;
+    height: 580px;
+    background-color: #101010;
+    border-radius: 10%;
+    box-shadow: 16px 14px 20px #000000c8;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.tarjeta::before{
+    content: "";
+    position: absolute;
+    width: 1300px;
+    height: 1500px;
+    background-image: conic-gradient(#0000ff 10deg, transparent 90deg,#0000ff 210deg, transparent 230deg);
+    animation: rotar 1.5s linear infinite;
+/*
+#cf010b rojo
+#00ff40 verde
+#0000ff azul
+
+*/
+}
+.tarjeta::after{
+    content: "";
+    position: absolute;
+    width: 1185px;
+    height: 565px;
+    background-color: #101010;
+    border-radius: 10%;
+}
+.capturedCanvas{
+    background-color: white;
+    z-index: 2;
+    border-radius: 10%;
+}
+.tarjeta2{
+    z-index: 1;
+    width: 1200px;
+    height: 580px;
+    background-color: transparent;
+    border-radius: 10%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
